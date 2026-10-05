@@ -11,11 +11,12 @@ This folder is a static GitHub Pages-ready portfolio.
 - `github-logo.svg`, `linkedin-logo.svg`, `gmail-logo.png` - local social logos
 - `html-logo.svg`, `css-logo.svg`, `javascript-logo.svg`, `python-logo.svg`, `django-logo.svg` - technology logos
 - `ai-icon.svg` - Lucide brain-circuit icon representing AI apps
+- `PickingGeekAI.jpg`, `HackerMooseAI_Logo.png`, `US_Photo.jpeg` - linked portfolio images
 
 ## Publish on GitHub Pages
 
 1. Create a repository named `jameschenpochih.github.io` under `github.com/jameschenpochih`.
-2. Upload `index.html`, `styles.css`, and all `.svg`, `.png`, and `.jpg` assets in this folder to the repository root.
+2. Upload `index.html`, `styles.css`, and all `.svg`, `.png`, `.jpg`, and `.jpeg` assets in this folder to the repository root.
 3. In GitHub, open **Settings > Pages**.
 4. Set the source to the main branch and root folder.
 5. Your site will be available at `https://jameschenpochih.github.io/`.
