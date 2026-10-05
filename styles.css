@@ -380,14 +380,14 @@ h1 span {
 
 .project-card {
   display: grid;
-  grid-template-columns: 13rem minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   align-items: center;
   padding: clamp(1rem, 2vw, 1.25rem);
 }
 
 .project-card.reverse {
-  grid-template-columns: minmax(0, 1fr) 13rem;
+  grid-template-columns: minmax(0, 1fr) 96px;
 }
 
 .project-card.reverse .project-visual {
@@ -396,7 +396,9 @@ h1 span {
 
 .project-visual.project-image {
   position: relative;
-  width: min(100%, 13rem);
+  width: 96px;
+  height: 96px;
+  max-width: 100%;
   justify-self: center;
   min-height: 0;
   aspect-ratio: 1;
@@ -738,7 +740,8 @@ textarea:focus-visible {
   }
 
   .project-visual.project-image {
-    width: min(100%, 10rem);
+    width: 96px;
+    height: 96px;
   }
 
   .mini-projects {
@@ -886,7 +889,8 @@ textarea:focus-visible {
   }
 
   .project-visual.project-image {
-    width: min(100%, 9rem);
+    width: 80px;
+    height: 80px;
   }
 
   .project-visual {
