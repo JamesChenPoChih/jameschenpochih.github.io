@@ -170,12 +170,15 @@ h1 span {
   place-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 6px;
-  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #354149;
+  background: #171c20;
+  transition: border-color 150ms ease, background-color 150ms ease;
 }
 
 .hero-links a:hover {
-  background: #171c20;
+  border-color: var(--aqua);
+  background: #20282d;
 }
 
 .social-logo {
