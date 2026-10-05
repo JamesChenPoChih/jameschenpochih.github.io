@@ -272,9 +272,9 @@ h1 span {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(15rem, 0.9fr) minmax(18rem, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(2rem, 4vw, 3rem);
-  align-items: center;
+  align-items: stretch;
   padding: 2rem 0 4rem;
 }
 
@@ -329,7 +329,7 @@ h1 span {
 }
 
 .about-panel {
-  padding: clamp(1.4rem, 3vw, 2.1rem);
+  padding: 1.25rem;
 }
 
 .about-panel h2,
@@ -341,20 +341,20 @@ h1 span {
 }
 
 .about-panel p {
-  font-weight: 750;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.65;
   color: var(--muted);
 }
 
-.mini-mark {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  margin: 0.7rem auto 0;
-  color: #fff;
-  background: var(--gold);
-  border-radius: 50%;
-  font-size: 1.35rem;
+.about-panel h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.about-panel p:last-child {
+  margin-bottom: 0;
 }
 
 .section-heading {
