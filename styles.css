@@ -669,6 +669,31 @@ button {
   background: var(--aqua);
 }
 
+.site-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  padding: 1rem 1rem 1.5rem;
+  border-top: 1px solid #20282d;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.site-footer p {
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.site-footer span {
+  min-width: 2ch;
+  color: var(--aqua);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
