@@ -1,4 +1,6 @@
 :root {
+  --portrait-size: clamp(13rem, 23vw, 20rem);
+  --project-image-size: calc((var(--portrait-size) - 4px - 0.1mm) * 1.2);
   --ink: #edf2f5;
   --muted: #a9b4bf;
   --paper: #000000;
@@ -240,7 +242,7 @@ h1 span {
 }
 
 .portrait-ring {
-  width: clamp(13rem, 23vw, 20rem);
+  width: var(--portrait-size);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -380,14 +382,14 @@ h1 span {
 
 .project-card {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: var(--project-image-size) minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   align-items: center;
   padding: clamp(1rem, 2vw, 1.25rem);
 }
 
 .project-card.reverse {
-  grid-template-columns: minmax(0, 1fr) 96px;
+  grid-template-columns: minmax(0, 1fr) var(--project-image-size);
 }
 
 .project-card.reverse .project-visual {
@@ -396,8 +398,8 @@ h1 span {
 
 .project-visual.project-image {
   position: relative;
-  width: 96px;
-  height: 96px;
+  width: var(--project-image-size);
+  height: var(--project-image-size);
   max-width: 100%;
   justify-self: center;
   min-height: 0;
@@ -687,6 +689,9 @@ textarea:focus-visible {
 }
 
 @media (max-width: 960px) {
+  :root {
+    --portrait-size: 10rem;
+  }
   .site-header {
     position: static;
     align-items: flex-start;
@@ -718,9 +723,6 @@ textarea:focus-visible {
     order: -1;
   }
 
-  .portrait-ring {
-    width: 10rem;
-  }
 
   .hero {
     gap: 1.75rem;
@@ -739,10 +741,6 @@ textarea:focus-visible {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .project-visual.project-image {
-    width: 96px;
-    height: 96px;
-  }
 
   .mini-projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -750,6 +748,9 @@ textarea:focus-visible {
 }
 
 @media (max-width: 520px) {
+  :root {
+    --portrait-size: 9rem;
+  }
   html {
     scroll-padding-top: 1rem;
   }
@@ -786,9 +787,6 @@ textarea:focus-visible {
     gap: 1.5rem;
   }
 
-  .portrait-ring {
-    width: 9rem;
-  }
 
   .eyebrow {
     font-size: 0.8125rem;
@@ -888,10 +886,6 @@ textarea:focus-visible {
     font-size: 1.25rem;
   }
 
-  .project-visual.project-image {
-    width: 80px;
-    height: 80px;
-  }
 
   .project-visual {
     min-height: 0;
