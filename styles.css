@@ -431,6 +431,13 @@ h1 span {
   font-size: clamp(1.35rem, 3vw, 2rem);
 }
 
+.project-body h3 a:hover,
+.project-body h3 a:focus-visible {
+  color: var(--aqua);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .project-body p {
   font-weight: 750;
   color: var(--muted);
