@@ -222,12 +222,16 @@ h1 span {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22);
 }
 
-.stack li:nth-child(1) { color: #ff774a; }
-.stack li:nth-child(2) { color: #41a9ff; }
-.stack li:nth-child(3) { color: #f7d847; }
-.stack li:nth-child(4) { color: #78c4ff; }
-.stack li:nth-child(5) { color: #76e6a2; }
-.stack li:nth-child(6) { color: #15e2d0; }
+.stack li img {
+  display: block;
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+}
+
+.stack li .ai-icon {
+  filter: invert(1);
+}
 
 .portrait-card {
   display: flex;
