@@ -329,7 +329,7 @@ h1 span {
 }
 
 .about-panel {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .about-panel h2,
@@ -341,15 +341,16 @@ h1 span {
 }
 
 .about-panel p {
-  margin-bottom: 0.75rem;
-  font-size: 0.9375rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.65;
+  line-height: 1.5;
   color: var(--muted);
 }
 
 .about-panel h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
   line-height: 1.2;
 }
 
@@ -810,19 +811,16 @@ textarea:focus-visible {
     min-height: 10rem;
   }
 
-  .about-panel,
   .section-heading {
     padding: 1.25rem;
   }
 
-  .about-panel h2,
   .section-heading h2,
   .contact h2 {
     font-size: 1.5rem;
     line-height: 1.2;
   }
 
-  .about-panel p,
   .project-body p,
   .section-heading p {
     font-weight: 500;
