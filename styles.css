@@ -380,10 +380,14 @@ h1 span {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(17rem, 1.05fr) minmax(17rem, 1fr);
+  grid-template-columns: 13rem minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   align-items: center;
   padding: clamp(1rem, 2vw, 1.25rem);
+}
+
+.project-card.reverse {
+  grid-template-columns: minmax(0, 1fr) 13rem;
 }
 
 .project-card.reverse .project-visual {
@@ -392,8 +396,10 @@ h1 span {
 
 .project-visual.project-image {
   position: relative;
+  width: min(100%, 13rem);
+  justify-self: center;
   min-height: 0;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1;
   padding: 0;
   background: #080a0c;
 }
@@ -727,6 +733,14 @@ textarea:focus-visible {
     order: 0;
   }
 
+  .project-card.reverse {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-visual.project-image {
+    width: min(100%, 10rem);
+  }
+
   .mini-projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -869,6 +883,10 @@ textarea:focus-visible {
 
   .project-body h3 {
     font-size: 1.25rem;
+  }
+
+  .project-visual.project-image {
+    width: min(100%, 9rem);
   }
 
   .project-visual {
